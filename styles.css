@@ -1,31 +1,46 @@
+/*General Page Properties*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*Header*/
 h1 {
     width: 100%;
     color: white;
     background-color: black;
     text-align: center;
     margin: 0 auto;
-    padding: 15px 0;
-    font-size: 24px;
+    padding: 22px 0;
+    font-size: 30px;
 }
 
-html {font-family: Helvetica, Arial, sans-serif;}
+/*Nav*/
+nav {
+    text-align: center;
+    font-size: 18px;
+    /* width: 30%; */
+    /* margin: 0 auto; */
+}
 
 nav a {
     color: white;
     background-color: lightgray;
     padding: 8px 5px;
+    font-weight: 900;
     display: inline-block;
     text-decoration: none;
     /* margin: 0 auto; */
     /* text-align: center; */
 }
 
-nav {
-    text-align: center;
-    font-weight: bold;
-    /* width: 30%; */
-    /* margin: 0 auto; */
-}
+/*Main Page Content*/
 
 .wrapper {
     width: 85%;
@@ -37,12 +52,48 @@ h3 {
     font-size: 19px;
     font-weight: 550;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
+    width:85%;
 }
-
-h3 {}
 
 span.underline {
     border-bottom: 3px solid gold;
     /* text-decoration-color: yellow; */
+}
+
+span {
+  color: black;
+}
+
+
+.row {
+    text-align: center;
+}
+
+.photo-box {
+    display: inline-block;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+img {
+    display: inline-block;
+}
+
+.photo-box footer {
+    background: gold;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.top {
+  margin-top: 15px;
+}
+
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
